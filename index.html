@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="todo-app.js" defer></script>
+  <script src="getSlogan.js" defer></script>
+  <script src="burger.js" defer></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      createTodoApp(document.getElementById("todo-app"), 'Мои дела');
+    });
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="headers">
+      <h1>Список моих дел</h1>
+      <h2 class="slogan"></h2>
+    </div>
+    <nav class="nav">
+      <div class="nav__page">
+        <a class="nav__link" href="index.html">Мои дела</a>
+        <a class="nav__link" href="mom.html">Дела мамы</a>
+        <a class="nav__link" href="dad.html">Дела папы</a>
+      </div>
+      <div class="nav__btn">
+        <button class="btn delete">Удалить выполненные</button>
+        <button class="btn clear">Очистить список</button>
+      </div>
+      <div class="nav__burger"></div>
+    </nav>
+
+    <nav class="burger">
+      <ul class="nav__list">  
+        <li><a class="dropdown__link" href="index.html">Мои дела</a></li>
+        <li><a class="dropdown__link" href="mom.html">Дела мамы</a></li>
+        <li><a class="dropdown__link" href="dad.html">Дела папы</a></li>
+      </ul>
+    </nav>
+
+    <form class="form" action="">
+      <input class="input" placeholder="Введите название дела" type="Введите название дела">
+      <div>
+        <button class="form__btn"></button>
+      </div>
+    </form>
+    <ul id="todo-app" class="list"></ul>
+  </div>
+</body>
+
+</html>

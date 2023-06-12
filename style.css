@@ -1,0 +1,231 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+body{
+  background-image: url(img/1_l8nmqQ-YU9qt-CECKJwMVw-730x487.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+a{text-decoration: none;}
+.container{
+  max-width: 1000px;
+  padding: 10px;
+}
+.headers{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+h1{
+  color: red;
+  border: 4px red solid;
+  border-radius: 6px;
+  padding: 10px;
+
+  -moz-transform: rotate(-15deg);
+   -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+     -ms-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+
+}
+.slogan{
+  font-size: 40px;
+  
+  color: rgb(143, 158, 7);
+  padding: 20px;
+}
+.nav{
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__page{
+  margin: 0;
+  vertical-align: middle;
+}
+.btn{
+  border-radius: 4px; 
+  cursor: pointer;
+}
+.nav__btn{
+  margin: 0;
+}
+.nav__link{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  background-color: tan;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+.nav__link:hover{
+  background-color: rgb(221, 144, 42);
+}
+.nav__burger{
+  display: none;
+}
+.burger {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  transform: scale(0);
+  background-color: rgb(143, 158, 7);
+  transition: all 0.5s;
+}
+
+.burger.active {
+  transform: scale(1);;
+  opacity: 1;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.burger .nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown__link{
+  padding: 10px;
+  font-size: 30px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+.dropdown__link:hover{
+  background-color: rgb(179, 199, 0);;
+}
+.form{
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  height: 50px;
+}
+.form__btn{
+  width: 50px;
+  background-color: rgb(143, 158, 7, 0.664);
+  background-image: url(img/dobawit-aktiw.png);
+  background-position: center;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.input{
+  background-color: rgba(143, 158, 7, 0.664);
+  width: 100%;
+  border: 2px rgb(138, 117, 89) solid;
+  border-radius: 4px;
+  font-size: 24px;
+  hyphens: auto;
+}
+button{
+  border: 2px rgb(138, 117, 89) solid;
+  border-radius: 4px;
+  height: 100%;
+  padding: 10px;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  list-style-type: none;
+  width: 100%;
+  text-align: left;
+  height: 70vh;
+  overflow-y: scroll;
+  
+  
+}
+.list__item{
+  height: 50px;
+  margin: 5px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  vertical-align: middle;
+
+
+}
+.list__name{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  border-radius: 4px;
+  height: 100%;
+  border: 2px rgb(138, 117, 89) solid;
+  box-sizing: border-box;
+  font-size: 24px;
+  background-color: rgba(210, 180, 140, 0.767);
+  
+}
+.list__name__done{
+  background-color: rgba(127, 255, 212, 0.767);
+  
+}
+
+.done__button{
+  height: 100%;
+  width: 50px;
+  
+  
+  background-image: url(img/ok.png);
+  background-position: center;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: rgba(210, 180, 140, 0)
+  
+}
+.done__button__done{
+  
+  background-image: url(img/no.png);
+  background-position: center;
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+.delete__button{
+  border-radius: 50%;
+  height: 100%;
+  width: 50px;
+  background-color: rgb(250, 94, 67);
+  background-image: url(img/delete.png);
+  background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  
+}
+
+@media (max-width: 750px) {
+  .nav__btn{
+    display: none;
+  }
+  .nav{
+    margin: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .slogan{
+    display: none;
+  }
+  .nav__page{
+    display: none;
+  }
+  .nav__burger{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(img/burger-menu-icon-4.jpg);
+    background-size: cover;
+  }
+  
+  .nav{
+    margin: 10px;
+  }
+}
